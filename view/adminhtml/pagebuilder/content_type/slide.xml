@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/content_type.xsd">
+    <type name="slide">
+        <appearances>
+            <appearance name="collage-left" preview_template="Webjump_PageBuilderBanner/content-type/slide/collage-left/preview"/>
+        </appearances>
+    </type>
+</config>
