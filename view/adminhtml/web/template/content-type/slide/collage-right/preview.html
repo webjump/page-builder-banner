@@ -10,7 +10,6 @@
      css="data.main.css"
      event="{ mouseover: onMouseOver, mouseout: onMouseOut }">
     <div class="pagebuilder-slide-wrapper"
-         css="data.main.css"
          event="mouseover: onMouseOverWrapper, mouseout: onMouseOutWrapper, mousedown: activateEditor">
         <scope args="getUploader().getUiComponent()">
             <render />
@@ -20,7 +19,6 @@
             <img attr="{src: data.images.desktop}">
         </figure>
         <div class="pagebuilder-overlay pagebuilder-collage-overlay wysiwyg-container"
-             attr="data.overlay.attributes"
              ko-style="data.overlay.style"
              event="mousedown: activateEditor">
             <div class="inline-wysiwyg"
@@ -49,9 +47,9 @@
             <a if="data.main.attributes()['data-show-button'] !== 'never'"
                type="button"
                class="pagebuilder-slide-button"
-               css="data.button.css"
                attr="data.button.attributes"
-               ko-style="data.button.style">
+               ko-style="data.button.style"
+               css="data.button.css">
                 <span data-bind="liveEdit: { field: 'button_text', placeholder: buttonPlaceholder, selectAll: true }"></span>
             </a>
         </div>
